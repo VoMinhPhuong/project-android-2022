@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "822390980101",
+    "project_id": "app-sell-cake",
+    "storage_bucket": "app-sell-cake.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:822390980101:android:141b08a84a14cb6157e66c",
+        "android_client_info": {
+          "package_name": "com.example.appsellcake"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "822390980101-vqjob6ejqh6mv9kq3a5gs59nj23sorjt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.appsellcake",
+            "certificate_hash": "4cea42b76d01fdd0dc0d656a271f8710b3d6aecc"
+          }
+        },
+        {
+          "client_id": "822390980101-ftg3ur2mqu5crpnr62p9dgtmasqufebu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlqw4niUiY4ccVflvQ_atgpw9Cyk8vO9I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "822390980101-ftg3ur2mqu5crpnr62p9dgtmasqufebu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
