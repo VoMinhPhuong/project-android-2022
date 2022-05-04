@@ -3,7 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/project-android-2022/app/src/main/res/drawable/boder_button.xml" value="0.2555" />
+        <entry key="..\:/project-android-2022/app/src/main/res/drawable/boder_button_2.xml" value="0.2555" />
+        <entry key="..\:/project-android-2022/app/src/main/res/drawable/boder_img.xml" value="0.144" />
+        <entry key="..\:/project-android-2022/app/src/main/res/layout/activity_login.xml" value="0.2" />
         <entry key="..\:/project-android-2022/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/project-android-2022/app/src/main/res/layout/activity_register.xml" value="0.264" />
       </map>
     </option>
   </component>
