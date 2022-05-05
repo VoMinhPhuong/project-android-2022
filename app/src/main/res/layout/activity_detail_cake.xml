@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".DetailCake">
+
+    <ImageView
+        android:id="@+id/imgdetail"
+        android:layout_width="254dp"
+        android:layout_height="197dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imguser"
+        app:srcCompat="@drawable/imgdetail" />
+
+    <ImageView
+        android:id="@+id/imguser"
+        android:layout_width="62dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/user" />
+
+
+    <TextView
+        android:id="@+id/tvprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="$23.00"
+        android:textColor="#FE554A"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imgdetail"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="@+id/imgdetail"
+        app:layout_constraintTop_toBottomOf="@+id/imgdetail" />
+
+    <TextView
+        android:id="@+id/tvuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Võ Minh Phương"
+        android:textColor="#FE554A"
+        app:layout_constraintEnd_toStartOf="@+id/imguser"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/tvSkip"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Chocolate Cake"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvsl" />
+
+    <ImageView
+        android:id="@+id/imgDanhgia"
+        android:layout_width="229dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvName"
+        app:srcCompat="@drawable/danhgia" />
+
+    <TextView
+        android:id="@+id/tvdetail"
+        android:layout_width="387dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="20dp"
+        android:text="Our simple, classic cheeseburger begins with a 100% pure beef burger seasoned with just a pinch of salt and pepper. The McDonald’s Cheeseburger is topped"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.558"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgDanhgia" />
+
+    <TextView
+        android:id="@+id/tvThanhtoan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Thanh toán:"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tvdetail"
+        app:layout_constraintTop_toBottomOf="@+id/tvdetail" />
+
+    <TextView
+        android:id="@+id/tvtotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$46.00"
+        android:textColor="#F44336"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tvdetail"
+        app:layout_constraintHorizontal_bias="0.956"
+        app:layout_constraintStart_toEndOf="@+id/tvThanhtoan"
+        app:layout_constraintTop_toTopOf="@+id/tvThanhtoan" />
+
+    <ImageButton
+        android:id="@+id/btntru"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/button"
+        app:layout_constraintEnd_toEndOf="@+id/tvprice"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvprice"
+        app:layout_constraintTop_toBottomOf="@+id/tvprice"
+        app:srcCompat="@drawable/ic_baseline_tru" />
+
+    <ImageButton
+        android:id="@+id/btncong"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/button"
+        app:layout_constraintEnd_toEndOf="@+id/tvprice"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tvprice"
+        app:layout_constraintTop_toBottomOf="@+id/tvprice"
+        app:srcCompat="@drawable/ic_baseline_cong" />
+
+    <Button
+        android:id="@+id/btndathang"
+        android:layout_width="369dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/buttondathang"
+        android:clickable="false"
+        android:shadowRadius="30"
+        android:text="Đặt hàng"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:backgroundTint="#F9881F"
+        app:layout_constraintEnd_toEndOf="@+id/tvtotal"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tvThanhtoan"
+        app:layout_constraintTop_toBottomOf="@+id/tvThanhtoan" />
+
+    <TextView
+        android:id="@+id/tvsl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="2"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btncong"
+        app:layout_constraintEnd_toStartOf="@+id/btncong"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toEndOf="@+id/btntru"
+        app:layout_constraintTop_toBottomOf="@+id/tvprice" />
+
+    <TextView
+        android:id="@+id/tvSkip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="Skip"
+        android:textColor="#FA5A1E"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
