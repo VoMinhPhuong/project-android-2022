@@ -1,16 +1,52 @@
 package com.example.appsellcake.entity;
 
-public class Cake {
-    private int imgDetail;
-    private double price;
-    private String name;
-    private String detail;
+import androidx.annotation.NonNull;
+import androidx.room.ColumnInfo;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
 
-    public Cake(int imgDetail, double price, String name, String detail) {
-        this.imgDetail = imgDetail;
-        this.price = price;
+@Entity
+public class Cake {
+    @PrimaryKey
+    @NonNull
+    @ColumnInfo(name = "name")
+    private String name;
+    @ColumnInfo(name = "imgDetail")
+    private int imgDetail;
+    @ColumnInfo(name = "soluong")
+    private int soluong;
+    @ColumnInfo(name = "price")
+    private String price;
+
+    @ColumnInfo(name = "detail")
+    private String detail;
+    @ColumnInfo(name = "loai")
+    private String loai;
+
+    public Cake() {
+    }
+
+    public Cake(@NonNull String name, int imgDetail, int soluong, String price, String detail, String loai) {
         this.name = name;
+        this.imgDetail = imgDetail;
+        this.soluong = soluong;
+        this.price = price;
         this.detail = detail;
+        this.loai = loai;
+
+    }
+
+    public Cake(int soluong) {
+        this.soluong = soluong;
+    }
+
+    @NonNull
+    public String getName() {
+        return name;
+    }
+
+    public void setName(@NonNull String name) {
+        this.name = name;
     }
 
     public int getImgDetail() {
@@ -21,20 +57,20 @@ public class Cake {
         this.imgDetail = imgDetail;
     }
 
-    public double getPrice() {
+    public int getSoluong() {
+        return soluong;
+    }
+
+    public void setSoluong(int soluong) {
+        this.soluong = soluong;
+    }
+
+    public String getPrice() {
         return price;
     }
 
-    public void setPrice(double price) {
+    public void setPrice(String price) {
         this.price = price;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public String getDetail() {
@@ -44,4 +80,13 @@ public class Cake {
     public void setDetail(String detail) {
         this.detail = detail;
     }
+
+    public String getLoai() {
+        return loai;
+    }
+
+    public void setLoai(String loai) {
+        this.loai = loai;
+    }
+
 }

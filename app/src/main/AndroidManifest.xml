@@ -28,6 +28,7 @@
             android:name=".gui.registerActivity"
             android:exported="false" />
         <activity
+            android:name=".gui.DetailCake"
             android:name=".gui.loginActivity"
             android:exported="false" />
         <activity
