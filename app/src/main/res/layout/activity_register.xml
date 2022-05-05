@@ -3,7 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".gui.registerActivity">
 
     <ImageView
         android:id="@+id/imageView"
@@ -46,14 +48,13 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView"
         app:layout_constraintVertical_bias="0.015" />
 
-    <TextView
-        android:id="@+id/button2"
+    <EditText
+        android:id="@+id/register_txttentaikhoan"
         android:layout_width="320dp"
         android:layout_height="57dp"
         android:background="@drawable/boder_button_2"
         android:hint="Nhập tên tài khoản"
         android:paddingLeft="50px"
-        android:paddingTop="50px"
         android:textSize="18dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -118,44 +119,41 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/button6"
+        app:layout_constraintStart_toStartOf="@+id/register_txtmatkhau"
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
-    <TextView
-        android:id="@+id/button2"
+    <EditText
+        android:id="@+id/register_txtnhaplaimatkhau"
         android:layout_width="320dp"
         android:layout_height="57dp"
         android:background="@drawable/boder_button_2"
         android:hint="Nhập lại mật khẩu"
         android:paddingLeft="50px"
-        android:paddingTop="50px"
         android:textSize="18dp"
         app:layout_constraintEnd_toEndOf="@+id/button2"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/textView10"
         app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
-    <TextView
-        android:id="@+id/button6"
+    <EditText
+        android:id="@+id/register_txtmatkhau"
         android:layout_width="320dp"
         android:layout_height="57dp"
         android:background="@drawable/boder_button_2"
         android:hint="Nhập mật khẩu"
         android:paddingLeft="50px"
-        android:paddingTop="50px"
         android:textSize="18dp"
         app:layout_constraintEnd_toEndOf="@+id/button4"
         app:layout_constraintStart_toStartOf="@+id/textView10"
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
-    <TextView
-        android:id="@+id/button4"
+    <EditText
+        android:id="@+id/register_txtemail"
         android:layout_width="320dp"
         android:layout_height="57dp"
         android:background="@drawable/boder_button_2"
         android:hint="Nhập email"
         android:paddingLeft="50px"
-        android:paddingTop="50px"
         android:textSize="18dp"
         app:layout_constraintEnd_toEndOf="@+id/button2"
         app:layout_constraintHorizontal_bias="0.0"
@@ -163,7 +161,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/register_btnlogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/boder_button"
@@ -181,7 +179,7 @@
         app:layout_constraintVertical_bias="0.183" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/register_btnresister"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Đăng ký"
@@ -191,7 +189,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/register_btnlogin"
         app:layout_constraintVertical_bias="0.393" />
 
     <TextView
@@ -208,7 +206,7 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintTop_toBottomOf="@+id/register_txtnhaplaimatkhau" />
 
     <ImageView
         android:id="@+id/imageView3"
