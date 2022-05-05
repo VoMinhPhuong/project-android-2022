@@ -3,12 +3,27 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Code/java/project-android-2022/app/src/main/res/drawable-v24/buttonexit.xml" value="0.1" />
+        <entry key="..\:/Code/java/project-android-2022/app/src/main/res/drawable-v24/ic_baseline_cong.xml" value="0.1" />
+        <entry key="..\:/Code/java/project-android-2022/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="..\:/Code/java/project-android-2022/app/src/main/res/layout/activity_detail_cake.xml" value="0.264" />
+        <entry key="..\:/HK2/Android/DoAn/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.184" />
+        <entry key="..\:/HK2/Android/DoAn/app/src/main/res/drawable/button_list_cake_boder.xml" value="0.184" />
+        <entry key="..\:/HK2/Android/DoAn/app/src/main/res/drawable/category_back.xml" value="0.184" />
+        <entry key="..\:/HK2/Android/DoAn/app/src/main/res/drawable/category_boder.xml" value="0.184" />
+        <entry key="..\:/HK2/Android/DoAn/app/src/main/res/drawable/home.xml" value="0.184" />
+        <entry key="..\:/HK2/Android/DoAn/app/src/main/res/drawable/item_list_cake_boder.xml" value="0.184" />
+        <entry key="..\:/HK2/Android/DoAn/app/src/main/res/layout/activity_home.xml" value="0.256140350877193" />
+        <entry key="..\:/HK2/Android/DoAn/app/src/main/res/layout/item_list_cake.xml" value="0.25" />
+        <entry key="..\:/HK2/Android/DoAn/app/src/main/res/layout/viewholder_category.xml" value="0.264" />
         <entry key="..\:/project-android-2022/app/src/main/res/drawable/boder_button.xml" value="0.2555" />
         <entry key="..\:/project-android-2022/app/src/main/res/drawable/boder_button_2.xml" value="0.2555" />
         <entry key="..\:/project-android-2022/app/src/main/res/drawable/boder_img.xml" value="0.144" />
-        <entry key="..\:/project-android-2022/app/src/main/res/layout/activity_login.xml" value="0.2" />
+        <entry key="..\:/project-android-2022/app/src/main/res/layout/activity_home.xml" value="0.25" />
+        <entry key="..\:/project-android-2022/app/src/main/res/layout/activity_login.xml" value="0.264" />
         <entry key="..\:/project-android-2022/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/project-android-2022/app/src/main/res/layout/activity_register.xml" value="0.264" />
+        <entry key="..\:/project-android-2022/app/src/main/res/layout/item_list_cake.xml" value="0.14722222222222223" />
       </map>
     </option>
   </component>
