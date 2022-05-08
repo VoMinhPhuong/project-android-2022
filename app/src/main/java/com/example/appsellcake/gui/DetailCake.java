@@ -1,8 +1,10 @@
-package com.example.appsellcake;
+package com.example.appsellcake.gui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.appsellcake.R;
 
 public class DetailCake extends AppCompatActivity {
 

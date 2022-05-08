@@ -8,6 +8,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.example.appsellcake.R;
 import com.example.appsellcake.entity.ListCakeEntity;
 
@@ -60,10 +61,11 @@ public class ListCakeAdapter extends BaseAdapter {
         } else {
             viewHolder = (ViewHolder) view.getTag();
         }
-
         viewHolder.txtName.setText(listCakeEntities.get(i).tenBanh);
         viewHolder.txtGia.setText(listCakeEntities.get(i).donGia);
-        viewHolder.hinh.setImageResource(listCakeEntities.get(i).hinhAnh);
+        Glide.with(context)
+                .load(listCakeEntities.get(i).hinhAnh)
+                .into(viewHolder.hinh);
 
         return view;
     }

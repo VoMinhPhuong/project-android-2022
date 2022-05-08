@@ -1,12 +1,12 @@
 package com.example.appsellcake.entity;
 
-public class Cake {
+public class CakeEntity {
     private int imgDetail;
     private double price;
     private String name;
     private String detail;
 
-    public Cake(int imgDetail, double price, String name, String detail) {
+    public CakeEntity(int imgDetail, double price, String name, String detail) {
         this.imgDetail = imgDetail;
         this.price = price;
         this.name = name;
