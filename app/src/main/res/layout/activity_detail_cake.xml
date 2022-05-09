@@ -34,17 +34,14 @@
         android:id="@+id/tvprice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
         android:layout_marginTop="16dp"
-        android:text="$23.00"
+        android:text="23.00"
         android:textColor="#FE554A"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/imgdetail"
-        app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="@+id/imgdetail"
-        app:layout_constraintTop_toBottomOf="@+id/imgdetail"
-        app:layout_constraintVertical_bias="0.007" />
+        app:layout_constraintTop_toBottomOf="@+id/imgdetail" />
 
     <TextView
         android:id="@+id/tvuser"
@@ -107,40 +104,35 @@
         android:id="@+id/tvtotal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="$46.00"
+        android:layout_marginStart="60dp"
+        android:text="46.00"
         android:textColor="#F44336"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/tvdetail"
-        app:layout_constraintHorizontal_bias="0.913"
         app:layout_constraintStart_toEndOf="@+id/tvThanhtoan"
-        app:layout_constraintTop_toTopOf="@+id/tvThanhtoan"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="@+id/tvThanhtoan" />
 
     <ImageButton
         android:id="@+id/btntru"
         android:layout_width="15dp"
         android:layout_height="15dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:background="@color/button"
-        app:layout_constraintEnd_toEndOf="@+id/tvprice"
-        app:layout_constraintHorizontal_bias="0.0"
+        android:src="@drawable/ic_baseline_tru"
         app:layout_constraintStart_toStartOf="@+id/tvprice"
-        app:layout_constraintTop_toBottomOf="@+id/tvprice"
-        android:src="@drawable/ic_baseline_tru" />
+        app:layout_constraintTop_toBottomOf="@+id/tvprice" />
 
     <ImageButton
         android:id="@+id/btncong"
         android:layout_width="15dp"
         android:layout_height="15dp"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
         android:background="@color/button"
-        app:layout_constraintEnd_toEndOf="@+id/tvprice"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/tvprice"
-        app:layout_constraintTop_toBottomOf="@+id/tvprice"
-        android:src="@drawable/ic_baseline_cong" />
+        android:src="@drawable/ic_baseline_cong"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/tvprice" />
 
     <Button
         android:id="@+id/btnMua"
@@ -189,6 +181,33 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.034" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="VNĐ"
+        android:textColor="#FE554A"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imgdetail"
+        app:layout_constraintHorizontal_bias="0.088"
+        app:layout_constraintStart_toEndOf="@+id/tvprice"
+        app:layout_constraintTop_toBottomOf="@+id/imgdetail" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VNĐ"
+        android:textColor="#F44336"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tvdetail"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/tvtotal"
+        app:layout_constraintTop_toTopOf="@+id/tvtotal" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,6 +1,8 @@
 package com.example.appsellcake.adapter;
 
 import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,7 +12,9 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.example.appsellcake.R;
+import com.example.appsellcake.entity.CakeEntity;
 import com.example.appsellcake.entity.ListCakeEntity;
+import com.example.appsellcake.gui.DetailCake;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,7 +22,8 @@ import java.util.List;
 public class ListCakeAdapter extends BaseAdapter {
     Context context;
     int layout;
-    List<ListCakeEntity> listCakeEntities;
+//    private List<CakeEntity> listCake;
+   private List<ListCakeEntity> listCakeEntities;
 
     public ListCakeAdapter(Context context, int layout, ArrayList<ListCakeEntity> listCakeEntities) {
         this.context = context;
@@ -66,6 +71,23 @@ public class ListCakeAdapter extends BaseAdapter {
         Glide.with(context)
                 .load(listCakeEntities.get(i).hinhAnh)
                 .into(viewHolder.hinh);
+
+        ListCakeEntity cakeEntity = listCakeEntities.get(i);
+
+        view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent in = new Intent(context, DetailCake.class);
+                Bundle bundle = new Bundle();
+                bundle.putString("imgDetail", cakeEntity.hinhAnh);
+                bundle.putString("name",cakeEntity.tenBanh);
+                bundle.putString("price",cakeEntity.donGia);
+                bundle.putString("detail",cakeEntity.chiTiet);
+
+                in.putExtras(bundle);
+                context.startActivity(in);
+            }
+        });
 
         return view;
     }

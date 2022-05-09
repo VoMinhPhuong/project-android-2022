@@ -12,7 +12,7 @@ public class CakeEntity {
     @ColumnInfo(name = "name")
     private String name;
     @ColumnInfo(name = "imgDetail")
-    private int imgDetail;
+    private String imgDetail;
     @ColumnInfo(name = "soluong")
     private int soluong;
     @ColumnInfo(name = "price")
@@ -26,7 +26,7 @@ public class CakeEntity {
     public CakeEntity() {
     }
 
-    public CakeEntity(@NonNull String name, int imgDetail, int soluong, String price, String detail, String loai) {
+    public CakeEntity(@NonNull String name, String imgDetail, int soluong, String price, String detail, String loai) {
         this.name = name;
         this.imgDetail = imgDetail;
         this.soluong = soluong;
@@ -49,11 +49,11 @@ public class CakeEntity {
         this.name = name;
     }
 
-    public int getImgDetail() {
+    public String getImgDetail() {
         return imgDetail;
     }
 
-    public void setImgDetail(int imgDetail) {
+    public void setImgDetail(String imgDetail) {
         this.imgDetail = imgDetail;
     }
 

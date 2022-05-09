@@ -109,7 +109,7 @@ public class Home extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 for (DataSnapshot dataSnapshot : snapshot.getChildren()){
                     String name = dataSnapshot.child("nameCake").getValue().toString();
-                    String price = dataSnapshot.child("price").getValue().toString() + " VNĐ";
+                    String price = dataSnapshot.child("price").getValue().toString();
                     String category = dataSnapshot.child("category").getValue().toString();
                     String detail = dataSnapshot.child("detail").getValue().toString();
                     String img = dataSnapshot.child("img").getValue().toString();
