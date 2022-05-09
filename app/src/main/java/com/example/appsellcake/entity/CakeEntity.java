@@ -6,7 +6,7 @@ import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
 @Entity
-public class Cake {
+public class CakeEntity {
     @PrimaryKey
     @NonNull
     @ColumnInfo(name = "name")
@@ -23,10 +23,10 @@ public class Cake {
     @ColumnInfo(name = "loai")
     private String loai;
 
-    public Cake() {
+    public CakeEntity() {
     }
 
-    public Cake(@NonNull String name, int imgDetail, int soluong, String price, String detail, String loai) {
+    public CakeEntity(@NonNull String name, int imgDetail, int soluong, String price, String detail, String loai) {
         this.name = name;
         this.imgDetail = imgDetail;
         this.soluong = soluong;
@@ -36,7 +36,7 @@ public class Cake {
 
     }
 
-    public Cake(int soluong) {
+    public CakeEntity(int soluong) {
         this.soluong = soluong;
     }
 

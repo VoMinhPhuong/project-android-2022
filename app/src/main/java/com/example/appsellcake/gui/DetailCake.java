@@ -5,7 +5,6 @@ import androidx.room.Room;
 
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -13,7 +12,7 @@ import android.widget.Toast;
 import com.example.appsellcake.R;
 import com.example.appsellcake.dao.CakeDao;
 import com.example.appsellcake.dao.DatabaseCake;
-import com.example.appsellcake.entity.Cake;
+import com.example.appsellcake.entity.CakeEntity;
 
 public class DetailCake extends AppCompatActivity {
     private ImageButton btncong;
@@ -50,10 +49,10 @@ public class DetailCake extends AppCompatActivity {
         btncong.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Cake cake = new Cake();
+                CakeEntity cake = new CakeEntity();
                 sl= sl+1;
                 tvsl.setText(sl+"");
-                dao.saveCakes(new Cake(sl));
+                dao.saveCakes(new CakeEntity(sl));
                 cake.setSoluong(cake.getSoluong()+1);
                 try {
                     dao.updateCake(cake);
@@ -67,7 +66,7 @@ public class DetailCake extends AppCompatActivity {
         btntru.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Cake cake = new Cake();
+                CakeEntity cake = new CakeEntity();
 
                 sl=sl-1;
 
@@ -76,7 +75,7 @@ public class DetailCake extends AppCompatActivity {
                     sl=1;
                 }else {
                     tvsl.setText(sl+"");
-                    dao.saveCakes(new Cake(sl));
+                    dao.saveCakes(new CakeEntity(sl));
                     cake.setSoluong(cake.getSoluong() + 1);
                     try {
                         dao.updateCake(cake);

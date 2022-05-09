@@ -6,7 +6,7 @@ import androidx.room.OnConflictStrategy;
 import androidx.room.Query;
 import androidx.room.Update;
 
-import com.example.appsellcake.entity.Cake;
+import com.example.appsellcake.entity.CakeEntity;
 
 import java.util.List;
 
@@ -14,12 +14,12 @@ import java.util.List;
 public interface CakeDao {
 
     //load
-    @Query("select * from Cake")
-    List<Cake> getCakes();
+    @Query("select * from CakeEntity")
+    List<CakeEntity> getCakes();
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
-    void saveCakes(Cake cakes);
+    void saveCakes(CakeEntity cakes);
 
     @Update
-    void updateCake(Cake cake);
+    void updateCake(CakeEntity cake);
 }

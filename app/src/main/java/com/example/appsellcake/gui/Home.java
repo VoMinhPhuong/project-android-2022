@@ -113,7 +113,6 @@ public class Home extends AppCompatActivity {
                     String category = dataSnapshot.child("category").getValue().toString();
                     String detail = dataSnapshot.child("detail").getValue().toString();
                     String img = dataSnapshot.child("img").getValue().toString();
-                    Log.d("ABC",name);
                     ListCakeEntity entity = new ListCakeEntity(name,price,category,detail,img);
                     listCakeEntities.add(entity);
                 }
