@@ -3,9 +3,12 @@ package com.example.appsellcake.gui;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.room.Room;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -20,6 +23,12 @@ public class DetailCake extends AppCompatActivity {
     private TextView tvsl;
     private TextView tvprice;
     private TextView tvtotal;
+
+    private ImageView imgdetail;
+    private TextView tvName;
+    private TextView tvdetail;
+
+
 
     private int sl=1;
     private DatabaseCake db;
@@ -37,7 +46,20 @@ public class DetailCake extends AppCompatActivity {
         tvprice= findViewById(R.id.tvprice);
         tvtotal = findViewById(R.id.tvtotal);
 
+        imgdetail=findViewById(R.id.imgdetail);
 
+        tvName=findViewById(R.id.tvName);
+        tvdetail=findViewById(R.id.tvdetail);
+
+        Intent in = getIntent();
+        String img =in.getStringExtra("img");
+        String name= in.getStringExtra("name");
+        String detail= in.getStringExtra("detail");
+        String price2= in.getStringExtra("price");
+//        imgdetail.setImageURI(Uri.parse(img));
+        tvName.setText(name);
+        tvdetail.setText(detail);
+        tvprice.setText(price2);
 
 
 
@@ -46,6 +68,8 @@ public class DetailCake extends AppCompatActivity {
         dao = db.cakeDao();
 
         tvsl.setText(sl+"");
+//        double a = Double.parseDouble(tvprice.getText().toString())* Double.parseDouble(tvsl.getText().toString());
+        tvtotal.setText(tvprice.getText().toString());
         btncong.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -59,7 +83,9 @@ public class DetailCake extends AppCompatActivity {
                 } catch (Exception ex) {
                     ex.printStackTrace();
                 }
-            }
+                double a = Double.parseDouble(tvprice.getText().toString())* Double.parseDouble(tvsl.getText().toString());
+                tvtotal.setText(a+"");
+        }
         });
 
 
@@ -76,32 +102,21 @@ public class DetailCake extends AppCompatActivity {
                 }else {
                     tvsl.setText(sl+"");
                     dao.saveCakes(new CakeEntity(sl));
-                    cake.setSoluong(cake.getSoluong() + 1);
+                    cake.setSoluong(cake.getSoluong() - 1);
                     try {
                         dao.updateCake(cake);
                     } catch (Exception ex) {
                         ex.printStackTrace();
                     }
                 }
+                double a = Double.parseDouble(tvprice.getText().toString())* Double.parseDouble(tvsl.getText().toString());
+                tvtotal.setText(a+"");
 
             }
         });
 
 
 
-//        btntru.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//
-//
-//                sl = sl-1;
-//                if(sl<1){
-//                    Toast.makeText(DetailCake.this, "Số lượng không được nhỏ hơn 1", Toast.LENGTH_SHORT).show();
-//                }else {
-//                    tvsl.setText(sl+"");
-//                }
-//
-//            }
-//        });
+
     }
 }
