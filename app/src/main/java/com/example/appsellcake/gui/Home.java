@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.GridView;
 import android.widget.Toast;
@@ -38,7 +39,6 @@ public class Home extends AppCompatActivity {
     Button btnTiramisu;
     Button btnMouse;
     Button btnChese;
-    String imgResource;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,14 +51,8 @@ public class Home extends AppCompatActivity {
         btnMouse = findViewById(R.id.btnMouse);
         btnChese = findViewById(R.id.btnChese);
         gridView = findViewById(R.id.gridList);
-
         listCakeEntities = new ArrayList<>();
         fStore = FirebaseFirestore.getInstance();
-        adapter();
-    }
-
-    private void adapter(){
-
     }
 
     private void setColor(Button button) {
