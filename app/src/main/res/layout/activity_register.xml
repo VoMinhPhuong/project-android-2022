@@ -19,20 +19,6 @@
         app:srcCompat="@drawable/_logo" />
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Skip"
-        android:textColor=" #FA5A1E"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.833"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.022" />
-    <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -162,8 +148,9 @@
 
     <Button
         android:id="@+id/register_btnlogin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="317dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="108dp"
         android:background="@drawable/boder_button"
         android:text="Đăng nhập tài khoản"
         android:textColor="@color/white"
@@ -171,12 +158,13 @@
         android:textStyle="bold"
         app:backgroundTint="#FF774C"
         app:layout_constraintBottom_toBottomOf="parent"
+
         app:layout_constraintEnd_toEndOf="parent"
 
+        app:layout_constraintHorizontal_bias="0.404"
         app:layout_constraintStart_toStartOf="parent"
-
-        app:layout_constraintTop_toBottomOf="@+id/textView7"
-        app:layout_constraintVertical_bias="0.183" />
+        app:layout_constraintTop_toBottomOf="@+id/register_txtnhaplaimatkhau"
+        app:layout_constraintVertical_bias="0.553" />
 
     <TextView
         android:id="@+id/register_btnresister"
@@ -190,33 +178,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/register_btnlogin"
-        app:layout_constraintVertical_bias="0.393" />
+        app:layout_constraintVertical_bias="0.222" />
 
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="197dp"
-        android:layout_height="53dp"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/boder_button_2"
-        android:paddingLeft="130px"
-        android:paddingTop="45px"
-        android:text="Sign-in with Google"
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/register_txtnhaplaimatkhau" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="32dp"
-        android:layout_height="31dp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView7"
-        app:layout_constraintEnd_toEndOf="@+id/textView7"
-        app:layout_constraintHorizontal_bias="0.054"
-        app:layout_constraintStart_toStartOf="@+id/textView7"
-        app:layout_constraintTop_toTopOf="@+id/textView7"
-        app:layout_constraintVertical_bias="0.59"
-        app:srcCompat="@drawable/google" />
 </androidx.constraintlayout.widget.ConstraintLayout>
