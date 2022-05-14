@@ -13,8 +13,8 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class MainActivity extends AppCompatActivity {
     private FirebaseDatabase db;
-    private   Button btnregister;
-    private  TextView btnsignin;
+    private   TextView btnregister;
+    private  Button btnsignin;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

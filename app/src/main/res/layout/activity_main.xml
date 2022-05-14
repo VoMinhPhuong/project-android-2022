@@ -44,12 +44,12 @@
         app:srcCompat="@drawable/group_389" />
 
     <Button
-        android:id="@+id/main_register"
+        android:id="@+id/main_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/boder_button"
-        android:text="Tạo tài khoản"
-        android:textColor="@color/black"
+        android:text="Đăng nhập"
+        android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
         app:backgroundTint="#FF774C"
@@ -61,18 +61,18 @@
         app:layout_constraintVertical_bias="0.057" />
 
     <TextView
-        android:id="@+id/main_login"
+        android:id="@+id/main_register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Đăng nhập"
-        android:textColor="#E40B0B"
+        android:text="Tạo tài khoản"
+        android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
 
-        app:layout_constraintTop_toBottomOf="@+id/main_register"
+        app:layout_constraintTop_toBottomOf="@+id/main_login"
         app:layout_constraintVertical_bias="0.275" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

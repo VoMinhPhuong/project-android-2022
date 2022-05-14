@@ -145,7 +145,7 @@
         android:hint="Nhập mật khẩu"
         android:paddingLeft="50px"
         android:textSize="18dp"
-        app:layout_constraintEnd_toEndOf="@+id/button4"
+
         app:layout_constraintStart_toStartOf="@+id/textView10"
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
@@ -157,7 +157,7 @@
         android:hint="Nhập email"
         android:paddingLeft="50px"
         android:textSize="18dp"
-        app:layout_constraintEnd_toEndOf="@+id/button2"
+
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/textView9"
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
