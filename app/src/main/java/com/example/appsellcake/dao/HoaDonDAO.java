@@ -23,6 +23,5 @@ public interface HoaDonDAO {
 
     @Update
     void update(HoaDon hoaDon);
-    @Query("SELECT * FROM hoadon where id like :id")
-    HoaDon findHoaDonByID(int id);
+
 }
