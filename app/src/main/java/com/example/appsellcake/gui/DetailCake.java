@@ -47,8 +47,6 @@ public class DetailCake extends AppCompatActivity {
     private HoaDonDAO daohd;
     private double thanhTien ;
     private Button btnMua;
-
-
     HoaDonFirebaseDAO hoaDonFirebaseDAO;
 
     private int sl=1;
@@ -153,11 +151,12 @@ public class DetailCake extends AppCompatActivity {
         btnMua.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                int id = new Random().nextInt(100000);
                 double gia = Double.parseDouble(price2);
-//             double   thanhTien1 = Double.parseDouble(tvtotal.getText().toString());
-
+                HoaDon hoaDon = new HoaDon(id,name,sl,gia,thanhTien);
+                daohd.saveHoaDon(hoaDon);
                 hoaDonFirebaseDAO = new HoaDonFirebaseDAO("Order");
-                addData(name,sl,gia,thanhTien);
+                addData(daohd.findHoaDonByID(id));
 
                 Log.d("ABC","So Luong"+sl +" gia: " + gia+" thanh Tien: " + thanhTien);
             }
@@ -165,10 +164,8 @@ public class DetailCake extends AppCompatActivity {
 
     }
 
-    private void addData(String name, int count,double price, double total) {
-        int id = new Random().nextInt(100000);
-        HoaDon bussines = new HoaDon(id, name, count, price, total);
-        hoaDonFirebaseDAO.add(bussines).addOnSuccessListener(suc -> {
+    private void addData(HoaDon hoaDon) {
+        hoaDonFirebaseDAO.add(hoaDon).addOnSuccessListener(suc -> {
             Toast.makeText(this, "Đặt hàng thành công", Toast.LENGTH_SHORT).show();
         }).addOnFailureListener(err -> {
             Toast.makeText(this, "Đặt hàng không thành công", Toast.LENGTH_SHORT).show();

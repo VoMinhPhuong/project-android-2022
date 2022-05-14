@@ -15,6 +15,9 @@ public interface HoaDonDAO {
     @Query("SELECT * FROM hoadon")
     List<HoaDon> getAll();
 
+    @Query("SELECT * FROM hoadon where id like :id")
+    HoaDon findHoaDonByID(int id);
+
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     void saveHoaDon(HoaDon hoaDon);
 
