@@ -64,26 +64,27 @@
         app:layout_constraintTop_toBottomOf="@+id/textView4"
         app:layout_constraintVertical_bias="0.288" />
 
+
     <EditText
         android:id="@+id/login_txtemail"
-        android:layout_width="320dp"
-        android:layout_height="57dp"
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
         android:background="@drawable/boder_button_2"
         android:hint="Nhập Email"
-        android:paddingTop="2px"
         android:paddingLeft="50px"
+        android:paddingTop="2px"
         android:textSize="18dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.362"
+        app:layout_constraintHorizontal_bias="0.523"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5"
-        app:layout_constraintVertical_bias="0.02" />
+        app:layout_constraintVertical_bias="0.022" />
 
     <EditText
         android:id="@+id/login_txtmatkhau"
-        android:layout_width="320dp"
-        android:layout_height="57dp"
+        android:layout_width="349dp"
+        android:layout_height="wrap_content"
         android:background="@drawable/boder_button_2"
         android:hint="Nhập mật khẩu"
         android:paddingLeft="50px"
@@ -91,40 +92,9 @@
         android:textSize="18dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.384"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5"
-        app:layout_constraintVertical_bias="0.281" />
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="197dp"
-        android:layout_height="53dp"
-        android:background="@drawable/boder_button_2"
-        android:paddingLeft="130px"
-        android:paddingTop="45px"
-        android:text="Sign-in with Google"
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_txtmatkhau"
-        app:layout_constraintVertical_bias="0.103" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="32dp"
-        android:layout_height="31dp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView7"
-        app:layout_constraintEnd_toEndOf="@+id/textView7"
-        app:layout_constraintHorizontal_bias="0.054"
-        app:layout_constraintStart_toStartOf="@+id/textView7"
-        app:layout_constraintTop_toTopOf="@+id/textView7"
-        app:layout_constraintVertical_bias="0.59"
-        app:srcCompat="@drawable/google" />
-
+        app:layout_constraintVertical_bias="0.279" />
 
     <Button
         android:id="@+id/login_btnlogin"
@@ -140,8 +110,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7"
-        app:layout_constraintVertical_bias="0.776" />
+        app:layout_constraintTop_toBottomOf="@+id/login_txtmatkhau" />
 
     <TextView
         android:id="@+id/login_btndangky"
