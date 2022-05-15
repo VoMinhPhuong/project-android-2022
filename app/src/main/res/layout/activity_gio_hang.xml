@@ -52,10 +52,11 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ListView
-        android:layout_width="409dp"
-        android:layout_height="433dp"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="134dp" />
+        android:layout_width="411dp"
+        android:layout_height="404dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <TextView
         android:id="@+id/textView14"
